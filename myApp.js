@@ -9,10 +9,8 @@ app.get("/", function (req, res) {
   res.sendFile(absolutepath);
 });
 
-
 app.get("/json", (req, res) => {
-  res.json({ message: ` Edmiro has ${23} years old` });
+  res.json({ message: `Edmiro has ${23} years old and he is a webdeveloper` });
 });
-
 
 module.exports = app;
